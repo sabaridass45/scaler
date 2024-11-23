@@ -125,14 +125,14 @@ By comparing the two approaches, the decorator approach provides several benefit
 ## Prerequisites for Decorators
 
 - [Namespace and Scope of the variable][ns]
-- [LEGB Rule][LEGB] 
-  
-  ![Alt text](Type_of_Namespace.png)
+- [LEGB Rule][LEGB] [![Alt text](Type_of_Namespace.png)][LEGB IMG]
     
 
 [ns]:https://www.scaler.com/topics/namespace-and-scope-in-python/ "SCALER Documentation for Namespace and scope of variable"
 
 [LEGB]: https://www.geeksforgeeks.org/scope-resolution-in-python-legb-rule/ "geeksforgeeks documentation for LEGB Rule"
+
+[LEGB IMG]: https://github.com/sabaridass45/scaler/blob/dev/python/Decorators/Type_of_Namespace.png "LEGB image"
 
 
   
