@@ -72,7 +72,7 @@ ValueError: Invalid data format
 </details>
 
 <details>
-<summary>code with using decorator approach</summary>
+<summary><strong>code with using decorator approach</strong></summary>
 
 ```python
 #common func to validate the data type
