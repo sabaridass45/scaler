@@ -30,12 +30,14 @@ Let's consider a scenario where you have multiple functions that require input v
 
 ```python
 def process_data(data):
+    #To validate the data type
     if isinstance(data, dict) and "value" in data:
         return data["value"] * 2
     else:
         raise ValueError("Invalid data format")
 
 def calculate_average(data):
+    #To validate the data type
     if isinstance(data, dict) and "value" in data:
         return (data["value"]) / len(data.keys())
     else:
@@ -73,6 +75,7 @@ ValueError: Invalid data format
 <summary>code with using decorator approach</summary>
 
 ```python
+#common func to validate the data type
 def validate_data_decorator(func):
     def wrapper(*args, **kwargs):
         data = args[0]
