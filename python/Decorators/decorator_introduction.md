@@ -42,12 +42,12 @@ def calculate_average(data):
         raise ValueError("Invalid data format")
 ```
 ```python
-#positive scenario
+#**positive scenario**
 valid_data = {"value": 10}
 print(process_data(valid_data))
 print(calculate_average(valid_data))
 ```
-> Output for positive scenario: 
+> **Output for positive scenario**: 
 ```
  20
  10.0
@@ -58,7 +58,7 @@ print(calculate_average(valid_data))
 invalid_data = [1, 2, 3]
 print(process_data(invalid_data))
 ```
-> Output for negative scenario: 
+> **Output for negative scenario**: 
 ```
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -70,7 +70,7 @@ ValueError: Invalid data format
 </details>
 
 <details>
-<summary>code with using decorator approach</summary>
+<summary>**code with using decorator approach**</summary>
 
 ```python
 def validate_data_decorator(func):
@@ -97,7 +97,7 @@ valid_data = {"value": 10}
 print(process_data(valid_data))
 print(calculate_average(valid_data))
 ```
-> Output for positive scenario: 
+> **Output for positive scenario**: 
 ```
  20
  10.0
@@ -108,7 +108,7 @@ print(calculate_average(valid_data))
 invalid_data = [1, 2, 3]
 print(process_data(invalid_data))
 ```
-> Output for negative scenario: 
+> **Output for negative scenario:** 
 ```
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
