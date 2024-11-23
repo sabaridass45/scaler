@@ -70,8 +70,7 @@ ValueError: Invalid data format
 </details>
 
 <details>
-**<summary>code with using decorator approach</summary>**
-
+<summary>code with using decorator approach</summary>
 ```python
 def validate_data_decorator(func):
     def wrapper(*args, **kwargs):
