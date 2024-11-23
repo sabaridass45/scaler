@@ -7,7 +7,7 @@ functions or methods at the time of their definition. They provide a ***way to w
 behavior of functions without changing their source code***. Decorators are widely used for
 various purposes, such as logging, access control, memoization, and more.
 
-# Why Use Decorators?
+## Why Use Decorators?
 
 1. **Code Reusability**: Decorators allow you to encapsulate reusable functionality
 and apply it to multiple functions or methods.
@@ -121,4 +121,19 @@ ValueError: Invalid data format
 </details>
 
 By comparing the two approaches, the decorator approach provides several benefits. It *reduces code duplication*, *enhances code reusability*, *separates concerns*, *improves code readability*, and *allows for easy modification of the additional functionality applied to multiple functions*.
+
+## Prerequisites for Decorators
+
+- [Namespace and Scope of the variable][ns]
+- [LEGB Rule][LEGB] ![Alt text](image-1.png)
+    
+
+[ns]:https://www.scaler.com/topics/namespace-and-scope-in-python/ "SCALER Documentation for Namespace and scope of variable"
+
+[LEGB]: https://www.geeksforgeeks.org/scope-resolution-in-python-legb-rule/ "geeksforgeeks documentation for LEGB Rule"
+
+
+  
+
+
 
