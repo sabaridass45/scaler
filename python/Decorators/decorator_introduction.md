@@ -26,7 +26,7 @@ behavior of functions dynamically
 Let's consider a scenario where you have multiple functions that require input validation. Without using a decorator, you would need to write the validation code in each function separately:
 <details>
 
-<summary>code without using decorator approach</summary>
+<summary><strong><i><code>code without using decorator approach</code></i></strong></summary>
 
 ```python
 def process_data(data):
