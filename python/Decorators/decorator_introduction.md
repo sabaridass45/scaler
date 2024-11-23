@@ -71,11 +71,12 @@ ValueError: Invalid data format
 
 <details>
 <summary>code with using decorator approach</summary>
+
 ```python
 def validate_data_decorator(func):
     def wrapper(*args, **kwargs):
         data = args[0]
-        #common functionality in both `process_data(data) and `calculate_average(data)`
+        # common functionality in both *process_data(data)* and *calculate_average(data)*
         if isinstance(data, dict) and "value" in data:
             return func(*args, **kwargs)
         else:
