@@ -1,3 +1,11 @@
+- [Namespace and Scope of the Variable](#namespace-and-scope-of-the-variable)
+    - [What is Namespace?](#what-is-namespace)
+    - [Types of Namespace](#types-of-namespace)
+      - [Global Namespace](#global-namespace)
+      - [Local Namespace](#local-namespace)
+      - [Built-in Namespaces](#built-in-namespaces)
+    - [What is variable scope in python?](#what-is-variable-scope-in-python)
+    - [Types of Scope](#types-of-scope)
 # Namespace and Scope of the Variable 
 
 ### What is Namespace?
