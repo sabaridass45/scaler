@@ -9,8 +9,7 @@ In python, namespace is a system that has a unique name for each object that obj
 2. Local Namespace: Created during the execution of a function or method, containing its local variables.
 3. Built-in Namespace: Contains Python’s built-in functions and exceptions (e.g., len, print, int).
 
-![img not found](/types_namespace-1.png)
-
+![img not found](/scaler/python/Decorators/types_namespace-1.png)
 #### Global Namespace
 Global namespaces are the variables that are defined at the module level and the global variable inside the module can used.
 
@@ -184,10 +183,11 @@ outer()
 - Accessibility: You can access built-in names anywhere in the program unless they are shadowed by a global or local variable with the same name.
 - Lifetime: Built-in names are available as long as the Python interpreter is running.
 
-Example:
+> Example:
 ```Python
 print('hello!')
 ```
-    Output:
-    Hello!
+> Output:
+    
+    hello!
 
