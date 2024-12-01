@@ -78,7 +78,10 @@ In python, Scope of the variable inside a method or function, class is accessibl
 - Lifetime: Local variables exist only during the function's execution.
 - Access: Variables in local scope cannot be accessed outside the function.
 
-Example:
+> Example:
+<details>
+    <summary>Example for Local Scope</summary>
+
 ```python
 def inner():
     a = 10 # local variable
@@ -86,9 +89,13 @@ def inner():
 inner()
 print(a) # error occurs
 ```
-    Output:
+<details>
+    <summary>Output:</summary>
+    
     10
     NameError: name a is not defined
+</details>
+</details>
 
 **Global Scope:** A global scope refers to the area where variables are defined and accessible throughout the program including inside functions. 
 
@@ -96,7 +103,11 @@ print(a) # error occurs
 - Lifetime: Global variables exist as long as the program runs.
 - Best Practices: Overuse of global variables can lead to code that is difficult to debug and maintain.
 
-Example:
+> Example:
+
+<details>
+    <summary>Example for global scope without modification</summary>
+
 ```python
 b = 20 # global variable
 def inner():
@@ -108,11 +119,19 @@ def inner():
 print('b:', b)
 inner()
 ```
-    Output:
+<details>
+    <summary>Output:</summary>
+
     b: 20
     a: 10
     inner function b: 15
+</details>
+</details>
+
 But in the same example when tries to modify global variable shows error **'UnboundLocalError'**. To overcome this, use **global keyword** as follows:
+<details>
+    <summary>Example for global scope with modification</summary>
+
 ```python
 b = 20 # global variable
 def inner():
@@ -125,10 +144,14 @@ def inner():
 inner()
 print('b:', b)
 ```
-    Output:
+<details>
+    <summary>Output:</summary>
+
     a: 10
     inner function b: 25
     b: 25
+</details>
+</details>
 
 **Enclosed Scope:** An enclosed scope in the variables are defined and accessible in the enclosed functions i.e. the nested function where variables are declared. Variables in the enclosing function’s scope can be accessed by the inner (nested) function but cannot be directly modified unless explicitly declared as nonlocal.
 
@@ -137,7 +160,10 @@ print('b:', b)
 - Modification: To modify an enclosing variable, use the nonlocal keyword.
 - Lifetime: Variables in the enclosed scope persist as long as the enclosing function exists.
 
-Example:
+> Example:
+<details>
+    <summary>Enclosed scope without modification</summary>
+
 ```python
 b = 20
 def outer():
@@ -151,11 +177,17 @@ def outer():
 
 outer()
 ```
-    Output:
+<details>
+    <summary>Output:</summary>
     a: 10
     inner function c: 15
     c: 15
+</details>
+</details>
 Similar to the global scope, to modify the enclosed variable need to use **nonlocal keyword** to overcome the **UnboundLocalError**.
+<details>
+    <summary>Enclosed scope with modification</summary>
+
 ```python
 b = 20
 def outer():
@@ -171,10 +203,16 @@ def outer():
 
 outer()
 ```
-    Output:
+
+<details>
+    <summary>Output:</summary>
+    
     a: 10
     inner function c: 30
     c: 30
+</details>
+</details>
+
 > **Note:** To modify the global variable in the local scope use **'global' keyword**, in the same way to modify the enclosed variable use **'nonlocal' keyword**.
 
 **Built-in Scope:** The built-in scope in Python is the widest or outermost scope that contains all the built-in functions, exceptions, and objects provided by Python. These include functions like print(), len(), and keywords like True, False, etc.
@@ -183,11 +221,19 @@ outer()
 - Accessibility: You can access built-in names anywhere in the program unless they are shadowed by a global or local variable with the same name.
 - Lifetime: Built-in names are available as long as the Python interpreter is running.
 
-> Example:
+<details>
+<summary>Example for Built-in</summary>
+
 ```Python
 print('hello!')
 ```
-> Output:
-    
-    hello!
+<details>
+<summary>Output:</summary>
 
+    hello!
+</details>
+</details>
+
+
+
+[LEGB_Rule](/scaler/python/Decorators/LEGB_Rule.md)
