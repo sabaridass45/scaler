@@ -9,7 +9,8 @@ In python, namespace is a system that has a unique name for each object that obj
 2. Local Namespace: Created during the execution of a function or method, containing its local variables.
 3. Built-in Namespace: Contains Python’s built-in functions and exceptions (e.g., len, print, int).
 
-![img not found](/scaler/python/Decorators/types_namespace-1.png)
+![LEGB IMG](/scaler/python/Decorators/types_namespace-1.png)
+
 #### Global Namespace
 Global namespaces are the variables that are defined at the module level and the global variable inside the module can used.
 
