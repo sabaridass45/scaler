@@ -22,32 +22,48 @@ In python, namespace is a system that has a unique name for each object that obj
 #### Global Namespace
 Global namespaces are the variables that are defined at the module level and the global variable inside the module can used.
 
-Examples:
+>Examples:
+<details>
+    <summary>Example for Global Namespace</summary>
+
 ```python
 num = 10; # global variable
 print('Num value is: ',num);
 ```
-    Output:
-    Num value is: 10
+<details>
+    <summary>Output:</summary>
 
-Using global variables from the import files
+    Num value is: 10
+</details>
+</details>
+
+
+<details>
+    <summary>Using global variables from the import files</summary>
 
 in details.py
 ```python
 firstName = 'Tony'
 secondName = 'Stark'
 ```
-
 in main.py
 ```python
 from details import firstName, secondName
 print('Fullname: ', firstName + ' ' + secondName)
 ```
-    Output:
+
+<details>
+    <summary>Output:</summary>
+    
     Fullname: Tony Stark
+</details>
+</details>
 
 #### Local Namespace
 Local namespaces are the variables that are created in the method or a function. But the variables cannot be used outside the function.
+
+<details>
+    <summary>Example for Local Variable</summary>
 
 ```python
 def fun():
@@ -56,9 +72,13 @@ def fun():
 fun()
 print('value of a outside function ', a) 
 ```
-    Output:
+<details>
+    <summary>Output:</summary>
+
     value of a inside function: 10
     NameError: name a is not defined
+</details>
+</details>
 
 #### Built-in Namespaces
 Built-in namespaces are the predefined/built-in functions and objects that has the scope as a lifetime of the entire program.
@@ -87,7 +107,7 @@ In python, Scope of the variable inside a method or function, class is accessibl
 - Lifetime: Local variables exist only during the function's execution.
 - Access: Variables in local scope cannot be accessed outside the function.
 
-> Example:
+>Example:
 <details>
     <summary>Example for Local Scope</summary>
 
@@ -169,7 +189,7 @@ print('b:', b)
 - Modification: To modify an enclosing variable, use the nonlocal keyword.
 - Lifetime: Variables in the enclosed scope persist as long as the enclosing function exists.
 
-> Example:
+>Example:
 <details>
     <summary>Enclosed scope without modification</summary>
 
@@ -230,6 +250,7 @@ outer()
 - Accessibility: You can access built-in names anywhere in the program unless they are shadowed by a global or local variable with the same name.
 - Lifetime: Built-in names are available as long as the Python interpreter is running.
 
+>Example:
 <details>
 <summary>Example for Built-in</summary>
 
@@ -242,6 +263,8 @@ print('hello!')
     hello!
 </details>
 </details>
+
+
 
 
 
